@@ -11,7 +11,7 @@ import java.util.Properties;
 
 public class AppServer {
     public static boolean statusUserFile = false;
-    public static File tempUserFile;
+    public static File pathUserFile;
 
     public static void main(String[] args) {
         String directoryFile = "";
@@ -37,17 +37,18 @@ public class AppServer {
                 File userDirectory = new File(directoryFile);
                 userDirectory.mkdir();
             }
-            tempUserFile = new File(directoryFile, userFile);
-            boolean existsUserFile = tempUserFile.exists();
+            pathUserFile = new File(directoryFile, userFile);
+            boolean existsUserFile = pathUserFile.exists();
             if(!existsUserFile){
                 File userDirectory = new File(directoryFile, userFile);
                 userDirectory.createNewFile();
             }
-            if(tempUserFile.exists()){
+            if(pathUserFile.exists()){
                 statusUserFile = true;
             }
 
 
+            //
             UserController userController = new UserController();
             User user = new User();
             user.setUserName("ali");

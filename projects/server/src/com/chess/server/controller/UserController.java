@@ -17,7 +17,7 @@ public class UserController {
         createUser.setImage(user.getImage());
         try {
             if (AppServer.statusUserFile) {
-                FileOutputStream fileOut = new FileOutputStream(AppServer.tempUserFile);
+                FileOutputStream fileOut = new FileOutputStream(AppServer.pathUserFile);
                 ObjectOutputStream objectOut = new ObjectOutputStream(fileOut);
                 objectOut.writeObject(user);
                 objectOut.close();
@@ -31,7 +31,7 @@ public class UserController {
     public List<User> find(){
         List<User> result = new ArrayList<>();
        try {
-           FileInputStream fileIn = new FileInputStream(AppServer.tempUserFile);
+           FileInputStream fileIn = new FileInputStream(AppServer.pathUserFile);
            ObjectInputStream objectIn = new ObjectInputStream(fileIn);
 
        } catch (Exception e) {
