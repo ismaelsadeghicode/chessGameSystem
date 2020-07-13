@@ -1,12 +1,21 @@
 package com.chess.server.model;
 
-public class User {
-    private int id;
+import java.io.Serializable;
+
+public class User implements Serializable {
+    private static final long serialVersionUID = 2L;
+    private static int counter = 0;
+
+    private int id = counter;
     private String userName ;
     private String password ;
     private Image image;
     private boolean status;
     private boolean isDeleted = false;
+
+    public User() {
+        this.id = ++counter;
+    }
 
     public int getId() {
         return id;

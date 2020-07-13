@@ -1,8 +1,10 @@
 package com.chess.server.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class History {
+public class History implements Serializable {
+    private static final long serialVersionUID = 2L;
     private int id;
     private int userId;
     private Date date;
