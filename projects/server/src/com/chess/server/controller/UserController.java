@@ -1,9 +1,12 @@
 package com.chess.server.controller;
 
-import com.chess.server.AppServer;
 import com.chess.server.model.User;
+import com.chess.server.util.Utility;
 
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,8 +19,8 @@ public class UserController {
         createUser.setPassword(user.getPassword());
         createUser.setImage(user.getImage());
         try {
-            if (AppServer.statusUserFile) {
-                FileOutputStream fileOut = new FileOutputStream(AppServer.pathUserFile);
+            if (Utility.statusUserFile) {
+                FileOutputStream fileOut = new FileOutputStream(Utility.pathUserFile);
                 ObjectOutputStream objectOut = new ObjectOutputStream(fileOut);
                 objectOut.writeObject(user);
                 objectOut.close();
@@ -31,7 +34,7 @@ public class UserController {
     public List<User> find(){
         List<User> result = new ArrayList<>();
        try {
-           FileInputStream fileIn = new FileInputStream(AppServer.pathUserFile);
+           FileInputStream fileIn = new FileInputStream(Utility.pathUserFile);
            ObjectInputStream objectIn = new ObjectInputStream(fileIn);
 
        } catch (Exception e) {
