@@ -25,7 +25,6 @@ public class Utility {
                 if (key.equals("userFile")) {
                     userFile = (String) config.get(key);
                 }
-
             }
             File tempUserDirectory = new File(directoryFile);
             boolean existsUserDirectory = tempUserDirectory.exists();

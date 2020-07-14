@@ -1,1 +1,1 @@
-# chessGameSystem client
+# chessGameSystem com.client
