@@ -3,10 +3,11 @@ package com.client.controller;
 import com.client.ClientApp;
 import com.client.model.Message;
 import com.client.model.User;
-import com.client.util.Listener;
-import com.client.util.Status;
+import com.client.util.*;
 import com.client.util.bubble.BubbleSpec;
 import com.client.util.bubble.BubbledLabel;
+import com.client.util.traynotifications.animations.AnimationType;
+import com.client.util.traynotifications.notification.TrayNotification;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -26,14 +27,19 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.*;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class ChatController implements Initializable {
+
     @FXML
     private TextArea messageBox;
     @FXML
@@ -70,6 +76,23 @@ public class ChatController implements Initializable {
         }
     }
 
+    public void recordVoiceMessage() throws IOException {
+        if (VoiceUtil.isRecording()) {
+            Platform.runLater(() -> {
+                        microphoneImageView.setImage(microphoneInactiveImage);
+                    }
+            );
+            VoiceUtil.setRecording(false);
+        } else {
+            Platform.runLater(() -> {
+                        microphoneImageView.setImage(microphoneActiveImage);
+
+                    }
+            );
+            VoiceRecorder.captureAudio();
+        }
+    }
+
 
     public synchronized void addToChat(Message msg) {
         Task<HBox> othersMessages = new Task<HBox>() {
@@ -80,9 +103,14 @@ public class ChatController implements Initializable {
                 profileImage.setFitHeight(32);
                 profileImage.setFitWidth(32);
                 BubbledLabel bl6 = new BubbledLabel();
-
-                bl6.setText(msg.getName() + ": " + msg.getMsg());
-
+                if (msg.getType() == MessageType.VOICE) {
+                    ImageView imageview = new ImageView(new Image(getClass().getClassLoader().getResource("images/sound.png").toString()));
+                    bl6.setGraphic(imageview);
+                    bl6.setText("Sent a voice message!");
+                    VoicePlayback.playAudio(msg.getVoiceMsg());
+                } else {
+                    bl6.setText(msg.getName() + ": " + msg.getMsg());
+                }
                 bl6.setBackground(new Background(new BackgroundFill(Color.WHITE, null, null)));
                 HBox x = new HBox();
                 bl6.setBubbleSpec(BubbleSpec.FACE_LEFT_CENTER);
@@ -106,9 +134,13 @@ public class ChatController implements Initializable {
                 profileImage.setFitWidth(32);
 
                 BubbledLabel bl6 = new BubbledLabel();
-
-                bl6.setText(msg.getMsg());
-
+                if (msg.getType() == MessageType.VOICE) {
+                    bl6.setGraphic(new ImageView(new Image(getClass().getClassLoader().getResource("images/sound.png").toString())));
+                    bl6.setText("Sent a voice message!");
+                    VoicePlayback.playAudio(msg.getVoiceMsg());
+                } else {
+                    bl6.setText(msg.getMsg());
+                }
                 bl6.setBackground(new Background(new BackgroundFill(Color.LIGHTGREEN,
                         null, null)));
                 HBox x = new HBox();
@@ -148,35 +180,37 @@ public class ChatController implements Initializable {
 
     public void setUserList(Message msg) {
         System.out.println("setUserList() method Enter");
+        ;
         Platform.runLater(() -> {
             ObservableList<User> users = FXCollections.observableList(msg.getUsers());
             userList.setItems(users);
+            userList.setCellFactory(new CellRendererController());
             setOnlineLabel(String.valueOf(msg.getUserlist().size()));
         });
         System.out.println("setUserList() method Exit");
     }
 
-//    /* Displays Notification when a user joins */
-//    public void newUserNotification(Message msg) {
-//        Platform.runLater(() -> {
-//            Image profileImg = new Image(getClass().getClassLoader().getResource("images/" + msg.getPicture().toLowerCase() + ".png").toString(), 50, 50, false, false);
-//            TrayNotification tray = new TrayNotification();
-//            tray.setTitle("A new user has joined!");
-//            tray.setMessage(msg.getName() + " has joined the JavaFX Chatroom!");
-//            tray.setRectangleFill(Paint.valueOf("#2C3E50"));
-//            tray.setAnimationType(AnimationType.POPUP);
-//            tray.setImage(profileImg);
-//            tray.showAndDismiss(Duration.seconds(5));
-//            try {
-//                Media hit = new Media(getClass().getClassLoader().getResource("sounds/notification.wav").toString());
-//                MediaPlayer mediaPlayer = new MediaPlayer(hit);
-//                mediaPlayer.play();
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
-//
-//        });
-//    }
+    /* Displays Notification when a user joins */
+    public void newUserNotification(Message msg) {
+        Platform.runLater(() -> {
+            Image profileImg = new Image(getClass().getClassLoader().getResource("images/" + msg.getPicture().toLowerCase() + ".png").toString(), 50, 50, false, false);
+            TrayNotification tray = new TrayNotification();
+            tray.setTitle("A new user has joined!");
+            tray.setMessage(msg.getName() + " has joined the JavaFX Chatroom!");
+            tray.setRectangleFill(Paint.valueOf("#2C3E50"));
+            tray.setAnimationType(AnimationType.POPUP);
+            tray.setImage(profileImg);
+            tray.showAndDismiss(Duration.seconds(5));
+            try {
+                Media hit = new Media(getClass().getClassLoader().getResource("sounds/notification.wav").toString());
+                MediaPlayer mediaPlayer = new MediaPlayer(hit);
+                mediaPlayer.play();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        });
+    }
 
     public void sendMethod(KeyEvent event) throws IOException {
         if (event.getCode() == KeyCode.ENTER) {

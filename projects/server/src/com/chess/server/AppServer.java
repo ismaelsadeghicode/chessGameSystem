@@ -8,7 +8,7 @@ import java.net.ServerSocket;
 
 public class AppServer {
 
-    private static final int PORT = 8888;
+    private static final int PORT = 9001;
 
     public static void main(String[] args) {
         Utility.checkAndCreateFileDirectory();

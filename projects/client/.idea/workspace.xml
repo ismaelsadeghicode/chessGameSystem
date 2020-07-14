@@ -1,56 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f96a672c-a1a7-4ca2-a5f0-5c4719205306" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/ClientApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/controller/ChatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/model/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/model/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/Listener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/MessageType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/ResizeHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/bubble/Bubble.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/bubble/BubbleSpec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/bubble/BubbledLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/amir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/away.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/busy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/close_normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cross.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/default.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/esmaeil.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/fxchat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/fxchat_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/line.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/microphone-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/microphone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/online.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/plug.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/settings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/sound.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sounds/notification.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/ButtonStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/ChatViewStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/ComboBox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/ListViewStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/Login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/ChatView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/LoginView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/TrayNotification.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/com/chess/server/exception/DuplicateUsernameException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/com/chess/server/model/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/com/chess/server/model/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/client.iml" afterDir="false" />
+    <list default="true" id="f96a672c-a1a7-4ca2-a5f0-5c4719205306" name="Default Changelist" comment="Add login page and system chat">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/controller/CellRendererController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/VoiceRecorder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/VoiceUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/animations/AnimationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/animations/AnimationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/animations/FadeAnimation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/animations/PopupAnimation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/animations/SlideAnimation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/animations/TrayAnimation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/models/CustomStage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/models/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/notification/NotificationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/notification/TrayNotification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/resources/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/resources/error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/resources/info.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/resources/notice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/resources/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/resources/warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/com/chess/server/model/MessageType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/chess/client/controller/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/chess/client/model/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/out/production/server/com/chess/server/util/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/out/production/server/com/chess/server/util/Utility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/com/chess/server/util/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/com/chess/server/util/Utility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/ClientApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/client/com/client/ClientApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/controller/ChatController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/client/com/client/controller/ChatController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/controller/ChatController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/client/com/client/controller/ChatController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/controller/ChatController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/client/com/client/controller/ChatController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/controller/ChatController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/client/com/client/controller/ChatController$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/controller/ChatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/client/com/client/controller/ChatController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/controller/LoginController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/client/com/client/controller/LoginController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/client/com/client/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/model/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/client/com/client/model/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/Listener$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/client/com/client/util/Listener$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/client/com/client/util/Listener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/MessageType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/client/com/client/util/MessageType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/ClientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/ClientApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/controller/ChatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/model/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/util/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/MessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/util/MessageType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/out/production/server/com/chess/server/AppServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/out/production/server/com/chess/server/AppServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/com/chess/server/AppServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/com/chess/server/AppServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +70,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/client/util" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -93,6 +85,7 @@
       <recent name="com.chess.client.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\person\chessGameSystem\projects\client\src\main\java\com\client\util\traynotifications" />
       <recent name="E:\person\chessGameSystem\projects\client\src\main\java\client\util" />
       <recent name="E:\person\chessGameSystem\projects\client\src\main\resources" />
       <recent name="E:\person\chessGameSystem\projects\client\src\main\resources\views" />
@@ -129,12 +122,16 @@
       <option name="presentableId" value="Default" />
       <updated>1594706019006</updated>
       <workItem from="1594706020437" duration="23000" />
-      <workItem from="1594708785257" duration="3990000" />
+      <workItem from="1594708785257" duration="6414000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add login page and system chat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add login page and system chat" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1594709534476">
@@ -145,45 +142,68 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1594711661165" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1594715739503">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594715739503" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1594719237580">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1594719237580" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1594706042249">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594706042249" />
-    <state width="1323" height="214" key="GridCell.Tab.0.bottom" timestamp="1594712182094">
+    <state width="1323" height="214" key="GridCell.Tab.0.bottom" timestamp="1594719410319">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594712182094" />
-    <state width="1323" height="214" key="GridCell.Tab.0.center" timestamp="1594712182094">
+    <state width="1323" height="214" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594719410319" />
+    <state width="1323" height="214" key="GridCell.Tab.0.center" timestamp="1594719410319">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594712182094" />
-    <state width="1323" height="214" key="GridCell.Tab.0.left" timestamp="1594712182093">
+    <state width="1323" height="214" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594719410319" />
+    <state width="1323" height="214" key="GridCell.Tab.0.left" timestamp="1594719410318">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594712182093" />
-    <state width="1323" height="214" key="GridCell.Tab.0.right" timestamp="1594712182094">
+    <state width="1323" height="214" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594719410318" />
+    <state width="1323" height="214" key="GridCell.Tab.0.right" timestamp="1594719410319">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594712182094" />
-    <state width="1323" height="214" key="GridCell.Tab.1.bottom" timestamp="1594712182094">
+    <state width="1323" height="214" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594719410319" />
+    <state width="1323" height="214" key="GridCell.Tab.1.bottom" timestamp="1594719410319">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594712182094" />
-    <state width="1323" height="214" key="GridCell.Tab.1.center" timestamp="1594712182094">
+    <state width="1323" height="214" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594719410319" />
+    <state width="1323" height="214" key="GridCell.Tab.1.center" timestamp="1594719410319">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594712182094" />
-    <state width="1323" height="214" key="GridCell.Tab.1.left" timestamp="1594712182094">
+    <state width="1323" height="214" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594719410319" />
+    <state width="1323" height="214" key="GridCell.Tab.1.left" timestamp="1594719410319">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594712182094" />
-    <state width="1323" height="214" key="GridCell.Tab.1.right" timestamp="1594712182094">
+    <state width="1323" height="214" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594719410319" />
+    <state width="1323" height="214" key="GridCell.Tab.1.right" timestamp="1594719410319">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594712182094" />
-    <state x="659" y="136" width="585" height="592" key="find.popup" timestamp="1594711600424">
+    <state width="1323" height="214" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594719410319" />
+    <state x="659" y="136" width="585" height="592" key="find.popup" timestamp="1594719208863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="659" y="136" width="585" height="592" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1594711600424" />
+    <state x="659" y="136" width="585" height="592" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1594719208863" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594719262453">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1594719262453" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/client/util/bubble/BubbleSpec.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -50,12 +50,12 @@ public class LoginController implements Initializable {
     private ChoiceBox imagePicker;
     @FXML
     private Label selectedPicture;
+    public static ChatController con;
     @FXML
     private BorderPane borderPane;
     private double xOffset;
     private double yOffset;
     private Scene scene;
-    public static ChatController con;
 
     private static LoginController instance;
 
@@ -72,14 +72,14 @@ public class LoginController implements Initializable {
         int port = Integer.parseInt(portTextfield.getText());
         String username = usernameTextfield.getText();
         String picture = selectedPicture.getText();
+
         FXMLLoader fmxlLoader = new FXMLLoader(getClass().getResource("/views/ChatView.fxml"));
         Parent window = (Pane) fmxlLoader.load();
         con = fmxlLoader.<ChatController>getController();
         Listener listener = new Listener(hostname, port, username, picture, con);
-        Thread thread = new Thread(listener);
-        thread.start();
+        Thread x = new Thread(listener);
+        x.start();
         this.scene = new Scene(window);
-
     }
 
     public void showScene() throws IOException {
@@ -102,7 +102,6 @@ public class LoginController implements Initializable {
             con.setImageLabel(selectedPicture.getText());
         });
     }
-
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -165,6 +164,10 @@ public class LoginController implements Initializable {
         }
     }
 
+
+    /* This method is used to generate the animation on the login window, It will generate random ints to determine
+     * the size, speed, starting points and direction of each square.
+     */
     public void generateAnimation() {
         Random rand = new Random();
         int sizeOfSqaure = rand.nextInt(50) + 1;
@@ -172,9 +175,11 @@ public class LoginController implements Initializable {
         int startXPoint = rand.nextInt(420);
         int startYPoint = rand.nextInt(350);
         int direction = rand.nextInt(5) + 1;
+
         KeyValue moveXAxis = null;
         KeyValue moveYAxis = null;
         Rectangle r1 = null;
+
         switch (direction) {
             case 1:
                 // MOVE LEFT TO RIGHT
@@ -208,11 +213,14 @@ public class LoginController implements Initializable {
                 moveXAxis = new KeyValue(r1.xProperty(), 350 - sizeOfSqaure);
                 moveYAxis = new KeyValue(r1.yProperty(), 420 - sizeOfSqaure);
                 break;
+
             default:
                 System.out.println("default");
         }
+
         r1.setFill(Color.web("#F89406"));
         r1.setOpacity(0.1);
+
         KeyFrame keyFrame = new KeyFrame(Duration.millis(speedOfSqaure * 1000), moveXAxis, moveYAxis);
         Timeline timeline = new Timeline();
         timeline.setCycleCount(Timeline.INDEFINITE);
@@ -222,7 +230,8 @@ public class LoginController implements Initializable {
         borderPane.getChildren().add(borderPane.getChildren().size() - 1, r1);
     }
 
-    public void closeSystem() { //Terminates Application
+    /* Terminates Application */
+    public void closeSystem() {
         Platform.exit();
         System.exit(0);
     }
@@ -231,6 +240,7 @@ public class LoginController implements Initializable {
         ClientApp.getPrimaryStage().setIconified(true);
     }
 
+    /* This displays an alert message to the user */
     public void showErrorDialog(String message) {
         Platform.runLater(() -> {
             Alert alert = new Alert(Alert.AlertType.WARNING);
