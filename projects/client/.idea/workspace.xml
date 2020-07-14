@@ -2,162 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f96a672c-a1a7-4ca2-a5f0-5c4719205306" name="Default Changelist" comment="Add login page and system chat">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/slf4j_api_1_7_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/out/production/server/com/ServerApp$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/out/production/server/com/ServerApp$Handler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/out/production/server/com/ServerApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/out/production/server/com/exception/DuplicateUsernameException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/out/production/server/com/messages/Message.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/out/production/server/com/messages/MessageType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/out/production/server/com/messages/Status.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/out/production/server/com/messages/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/com/ServerApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/com/messages/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/META-INF/client.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/../server/out/production/server/META-INF/server.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/ClientApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/controller/CellRendererController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/controller/CellRendererController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/controller/ChatController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/controller/ChatController$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/controller/ChatController$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/controller/ChatController$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/controller/ChatController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/controller/LoginController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/controller/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/model/Image.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/model/Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/Listener$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/Listener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/MessageType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/ResizeHelper$ResizeListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/ResizeHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/Status.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/VoicePlayback$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/VoicePlayback.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/VoiceRecorder$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/VoiceRecorder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/VoiceUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/bubble/Bubble$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/bubble/Bubble.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/bubble/BubbleSpec.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/bubble/BubbledLabel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/bubble/BubbledLabel$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/bubble/BubbledLabel$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/bubble/BubbledLabel$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/bubble/BubbledLabel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/traynotifications/animations/AnimationProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/traynotifications/animations/AnimationType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/traynotifications/animations/FadeAnimation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/traynotifications/animations/PopupAnimation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/traynotifications/animations/SlideAnimation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/traynotifications/animations/TrayAnimation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/traynotifications/models/CustomStage$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/traynotifications/models/CustomStage$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/traynotifications/models/CustomStage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/traynotifications/models/Location.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/traynotifications/notification/NotificationType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/traynotifications/notification/TrayNotification$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/com/client/util/traynotifications/notification/TrayNotification.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/images/amir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/images/away.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/images/busy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/images/close.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/images/close_normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/images/cross.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/images/default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/images/esmaeil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/images/fxchat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/images/fxchat_.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/images/line.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/images/microphone-active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/images/microphone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/images/online.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/images/plug.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/plug_.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/images/settings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/images/sound.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/sounds/notification.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/styles/ButtonStyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/styles/ChatViewStyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/styles/ComboBox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/styles/ListViewStyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/styles/Login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/views/ChatView.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/views/LoginView.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/views/TrayNotification.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/ClientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ClientApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/controller/CellRendererController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/CellRendererController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/ChatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/model/Image.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/com/messages/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/messages/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/util/Listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/MessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/messages/MessageType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/ResizeHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/util/ResizeHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/messages/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/VoicePlayback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/util/VoicePlayback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/VoiceRecorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/util/VoiceRecorder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/VoiceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/util/VoiceUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/bubble/Bubble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/messages/bubble/Bubble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/bubble/BubbleSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/messages/bubble/BubbleSpec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/bubble/BubbledLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/messages/bubble/BubbledLabel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/animations/AnimationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traynotifications/animations/AnimationProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/animations/AnimationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traynotifications/animations/AnimationType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/animations/FadeAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traynotifications/animations/FadeAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/animations/PopupAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traynotifications/animations/PopupAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/animations/SlideAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traynotifications/animations/SlideAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/animations/TrayAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traynotifications/animations/TrayAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/models/CustomStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traynotifications/models/CustomStage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/models/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traynotifications/models/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/notification/NotificationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traynotifications/notification/NotificationType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/notification/TrayNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traynotifications/notification/TrayNotification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/resources/arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traynotifications/resources/arrow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/resources/error.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traynotifications/resources/error.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/resources/info.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traynotifications/resources/info.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/resources/notice.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traynotifications/resources/notice.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/resources/success.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traynotifications/resources/success.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/util/traynotifications/resources/warning.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traynotifications/resources/warning.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/plug.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/plug.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/ChatView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/ChatView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/LoginView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/LoginView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/out/production/server/com/chess/server/AppServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/out/production/server/com/chess/server/controller/GameController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/out/production/server/com/chess/server/controller/HistoryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/out/production/server/com/chess/server/controller/ImageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/out/production/server/com/chess/server/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/out/production/server/com/chess/server/exception/DuplicateUsernameException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/out/production/server/com/chess/server/model/Game.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/out/production/server/com/chess/server/model/History.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/out/production/server/com/chess/server/model/Image.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/out/production/server/com/chess/server/model/Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/out/production/server/com/chess/server/model/MessageType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/out/production/server/com/chess/server/model/Status.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/out/production/server/com/chess/server/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/out/production/server/com/chess/server/test/ServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/out/production/server/com/chess/server/util/Handler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/out/production/server/com/chess/server/util/Utility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/com/chess/server/AppServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/com/chess/server/controller/GameController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/com/chess/server/controller/HistoryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/com/chess/server/controller/ImageController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/com/chess/server/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/com/chess/server/exception/DuplicateUsernameException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/com/exception/DuplicateUsernameException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/com/chess/server/model/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/com/chess/server/model/History.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/com/chess/server/model/Image.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/com/chess/server/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/messages/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/com/chess/server/model/MessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/com/messages/MessageType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/com/chess/server/model/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/com/messages/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/com/chess/server/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/com/chess/server/test/ServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/com/chess/server/util/Handler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/com/chess/server/util/Utility.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/com/util/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/com/ServerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/com/ServerApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +132,7 @@
       <workItem from="1594706020437" duration="23000" />
       <workItem from="1594708785257" duration="6414000" />
       <workItem from="1594721175811" duration="68000" />
-      <workItem from="1594721973705" duration="4393000" />
+      <workItem from="1594721973705" duration="4841000" />
     </task>
     <servers />
   </component>
@@ -318,46 +164,46 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594724586566" />
-    <state width="1323" height="214" key="GridCell.Tab.0.bottom" timestamp="1594726756630">
+    <state width="1323" height="214" key="GridCell.Tab.0.bottom" timestamp="1594727142027">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594726756630" />
-    <state width="1323" height="214" key="GridCell.Tab.0.center" timestamp="1594726756630">
+    <state width="1323" height="214" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594727142027" />
+    <state width="1323" height="214" key="GridCell.Tab.0.center" timestamp="1594727142027">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594726756630" />
-    <state width="1323" height="214" key="GridCell.Tab.0.left" timestamp="1594726756630">
+    <state width="1323" height="214" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594727142027" />
+    <state width="1323" height="214" key="GridCell.Tab.0.left" timestamp="1594727142027">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594726756630" />
-    <state width="1323" height="214" key="GridCell.Tab.0.right" timestamp="1594726756630">
+    <state width="1323" height="214" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594727142027" />
+    <state width="1323" height="214" key="GridCell.Tab.0.right" timestamp="1594727142027">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594726756630" />
-    <state width="1323" height="214" key="GridCell.Tab.1.bottom" timestamp="1594726756631">
+    <state width="1323" height="214" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594727142027" />
+    <state width="1323" height="214" key="GridCell.Tab.1.bottom" timestamp="1594727142028">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594726756631" />
-    <state width="1323" height="214" key="GridCell.Tab.1.center" timestamp="1594726756631">
+    <state width="1323" height="214" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594727142028" />
+    <state width="1323" height="214" key="GridCell.Tab.1.center" timestamp="1594727142028">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594726756631" />
-    <state width="1323" height="214" key="GridCell.Tab.1.left" timestamp="1594726756630">
+    <state width="1323" height="214" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594727142028" />
+    <state width="1323" height="214" key="GridCell.Tab.1.left" timestamp="1594727142027">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594726756630" />
-    <state width="1323" height="214" key="GridCell.Tab.1.right" timestamp="1594726756631">
+    <state width="1323" height="214" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594727142027" />
+    <state width="1323" height="214" key="GridCell.Tab.1.right" timestamp="1594727142028">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594726756631" />
+    <state width="1323" height="214" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594727142028" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1594724589574">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594724589574" />
-    <state x="438" y="46" width="585" height="624" key="find.popup" timestamp="1594727114754">
+    <state x="438" y="46" width="585" height="624" key="find.popup" timestamp="1594727179176">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="438" y="46" width="585" height="624" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1594727114754" />
+    <state x="438" y="46" width="585" height="624" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1594727179176" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594719262453">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
