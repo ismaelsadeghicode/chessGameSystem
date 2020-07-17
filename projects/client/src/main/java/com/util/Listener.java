@@ -20,7 +20,7 @@ public class Listener implements Runnable{
     public String hostname;
     public int port;
     public static String username;
-    public ChatController controller;
+    public ChatController chatController;
     private static ObjectOutputStream oos;
     private InputStream is;
     private ObjectInputStream input;
@@ -31,7 +31,7 @@ public class Listener implements Runnable{
         this.port = port;
         Listener.username = username;
         Listener.picture = picture;
-        this.controller = controller;
+        this.chatController = controller;
     }
 
     public void run() {
@@ -59,32 +59,32 @@ public class Listener implements Runnable{
                    System.out.println("Message recieved:" + message.getMsg() + " MessageType:" + message.getType() + "Name:" + message.getName());
                     switch (message.getType()) {
                         case USER:
-                            controller.addToChat(message);
+                            chatController.addToChat(message);
                             break;
                         case VOICE:
-                            controller.addToChat(message);
+                            chatController.addToChat(message);
                             break;
                         case NOTIFICATION:
-                            controller.newUserNotification(message);
+                            chatController.newUserNotification(message);
                             break;
                         case SERVER:
-                            controller.addAsServer(message);
+                            chatController.addAsServer(message);
                             break;
                         case CONNECTED:
-                            controller.setUserList(message);
+                            chatController.setUserList(message);
                             break;
                         case DISCONNECTED:
-                            controller.setUserList(message);
+                            chatController.setUserList(message);
                             break;
                         case STATUS:
-                            controller.setUserList(message);
+                            chatController.setUserList(message);
                             break;
                     }
                 }
             }
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
-            controller.logoutScene();
+            chatController.logoutScene();
         }
     }
 
