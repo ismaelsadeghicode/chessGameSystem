@@ -38,8 +38,6 @@ import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.net.URL;
@@ -75,7 +73,6 @@ public class ChatController implements Initializable {
 
     private double xOffset;
     private double yOffset;
-    Logger logger = LoggerFactory.getLogger(ChatController.class);
 
     public void sendButtonAction() throws IOException {
         String msg = messageBox.getText();
@@ -123,7 +120,7 @@ public class ChatController implements Initializable {
                 HBox x = new HBox();
                 bl6.setBubbleSpec(BubbleSpec.FACE_LEFT_CENTER);
                 x.getChildren().addAll(profileImage, bl6);
-                logger.debug("ONLINE USERS: " + Integer.toString(msg.getUserlist().size()));
+                System.out.println("ONLINE USERS: " + Integer.toString(msg.getUserlist().size()));
                 setOnlineLabel(Integer.toString(msg.getOnlineCount()));
                 return x;
             }
@@ -187,14 +184,14 @@ public class ChatController implements Initializable {
     }
 
     public void setUserList(Message msg) {
-        logger.info("setUserList() method Enter");
+        System.out.println("setUserList() method Enter");
         Platform.runLater(() -> {
             ObservableList<User> users = FXCollections.observableList(msg.getUsers());
             userList.setItems(users);
             userList.setCellFactory(new CellRendererController());
             setOnlineLabel(String.valueOf(msg.getUserlist().size()));
         });
-        logger.info("setUserList() method Exit");
+        System.out.println("setUserList() method Exit");
     }
 
     public void newUserNotification(Message msg) {
